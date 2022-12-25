@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   outline: none;
+  list-style: none;
 }
 
 a {
@@ -14,6 +15,7 @@ a {
 body {
   font-size: 16px;
   font-family: "Chivo Mono", monospace;
+  background-color: #efefef;
 }
 
 .container {
@@ -29,7 +31,7 @@ body {
 }
 
 .pokemon__logo {
-  width: 250px;
+  width: 300px;
 }
 
 .pokemon {
@@ -37,19 +39,31 @@ body {
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 1.5rem;
+  color: #efefef;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 500px;
+  max-width: 100%;
   background: linear-gradient(45deg, #ffeb3b, #ff9800);
+  filter: drop-shadow(15px 15px 15px hsl(76deg 0% 0% /0.5));
 }
 
 .pokemon__wrapperImage {
   width: 250px;
   height: 250px;
-  border-radius: 50%;   
+  border-radius: 50%;
   background-color: #efefef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .pokemon__image {
   width: 100%;
+  filter: drop-shadow(15px 15px 15px hsl(76deg 0% 0% /0.5));
+
+  /* margin-bottom: 10rem; */
 }
 
 .pokestop {
@@ -59,19 +73,34 @@ body {
   gap: 2rem;
   flex-wrap: wrap;
   padding: 2rem 0;
-  min-height: calc(100vh - 8rem - 52px);
+  min-height: calc(100vh - 7.2rem - 52px);
+}
+
+.pokemon__name {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.pokemon__abilities {
+  text-transform: capitalize;
+  margin-left: 18px;
 }
 
 .footer {
-  height: 52px;
+  height: 53px;
   padding: 1rem 0;
   background-color: #25252b;
   color: #fff;
   text-align: center;
+  text-transform: uppercase;
+}
+
+.pokeball {
+  width: 250px;
 }
 
 .pokeball__image {
-  width: 250px;
+  width: 100%;
   cursor: pointer;
   filter: drop-shadow(15px 15px 15px hsl(76deg 0% 0% /0.5));
 }
